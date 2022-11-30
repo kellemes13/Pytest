@@ -1,11 +1,11 @@
 import os
 import time
-import progressbar
+#import progressbar
 
 data=[]
 count=0
 countt=0
-bar = progressbar.ProgressBar(max_value=1000000)
+#bar = progressbar.ProgressBar(max_value=1000000)
 
 #calcaulate the line of review
 
@@ -13,7 +13,7 @@ with open('reviews.txt','r') as f:
 	for line in f:
 		data.append(line)
 		count+=1
-		bar.update(count)
+		#bar.update(count)
 		#if count%1000==0:
 			#print(len(data))
 #count=0
@@ -31,7 +31,7 @@ for d in data:
 
 
 #print(word_count)
-for index in word_count:
+for  in word_count:
 	if word_count[index] >1000000:
 		print(index,word_count[index])
 end =time.time()
